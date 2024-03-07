@@ -1,0 +1,371 @@
+:root {
+  --main-color: #8fb7ce; 
+  --secondary-color: #000000; 
+  --tetiary-color: #4d94ff; 
+  --gray-color: #d5d4d4; 
+  --secondgray-color: #e2dddd; 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Portfolio {
+  text-decoration: none;
+}
+
+.links a {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  padding: 5px 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin-right: 10px;
+}
+
+.cv {
+  background-color: var(--tetiary-color);
+  border: 1px solid var(--tetiary-color) !important;
+  border-radius:25px;
+}
+
+body {
+  background: var(--main-color);
+  color: var(--secondary-color);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 20px 50px;
+}
+
+/* Bagian header */
+
+header {
+  height: auto;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--main-color); 
+  z-index: 999; 
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav > .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e1d1d;
+  margin-left:80px;
+  margin-bottom: 10px;
+}
+
+.nav > .navbarr > ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 70px;
+  margin-right: 250px;
+  font-size: 18px;
+}
+
+.nav > .navbarr > ul > li > a {
+  text-decoration: none;
+  color: var(--secondary-color); 
+  
+}
+
+.nav > .navbarr > ul > li > a:visited {
+  color: var(--secondary-color); 
+}
+
+main {
+  margin-bottom: 200px;
+}
+
+/* Bagian hero */
+
+.hero {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro {
+  width: 45%;
+  height: 100%;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro h1 {
+  font-size: 50px;
+  margin-right:200px;
+}
+
+.intro p {
+  color: var(--secondgray-color);
+  margin-bottom: 20px;
+  font-size:25px; 
+}
+
+.image {
+  margin-top: 100px;
+  width: 40%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: #6796d4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  border: 1px solid #6796d4;
+  position: relative; 
+}
+
+.image > img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 95%;
+  position: absolute;
+  top: -50px; 
+}
+
+/* Bagian Tentang */
+
+.tentang,
+.layanan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.tentang .judul,
+.layanan .judul,
+.formulir .judul {
+  font-size: 35px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+
+.tentang .paragraf {
+  width: 60%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+
+.tentang .sosial-media,
+.layanan .kartu-layanan,
+.layanan .kartu-keterampilan {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tentang .sosial-media .kartu,
+.layanan .kartu-layanan .kartu,
+.layanan .kartu-keterampilan .kartu {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 20%;
+  height: 150px;
+}
+
+.tentang .lingkaran,
+.layanan .ikon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--gray-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tentang .lingkaran > div,
+.layanan .ikon > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--tetiary-color);
+}
+
+
+
+.kartu-layanan {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.kartu-layanan .kartu {
+  width: 100px; 
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.kartu-layanan .kartu:hover {
+  transform: translateY(-10px);
+}
+
+.gambar-layanan {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.kartu-layanan .kartu .gambar-layanan {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+.jenjang {
+  color:black;
+}
+
+.kartu-keterampilan {
+  width: 100%;
+  max-width: 1500px;
+  justify-content: center !important;
+  background-color: var(--gray-color);
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 0 11px 15px rgba(0, 0, 0, 0.3);
+}
+
+.kartu-keterampilan .kartu {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--secondgray-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.kartu-keterampilan .kartu > .jenjang {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.kartu-keterampilan .kartu > .nama {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--tetiary-color);
+}
+
+
+.formulir {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+form {
+  width: 50%;
+  align-self: center;
+  margin-top: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+form > input {
+  border: none;
+  background: transparent;
+  width: 48%;
+  height: 40px;
+  border-bottom: 2.5px solid #c4c4c4;
+  outline: none;
+  font-size: 16px;
+}
+
+form > textarea {
+  border: none;
+  background: transparent;
+
+  border: 2.5px solid #c4c4c4;
+  outline: none;
+  font-size: 16px;
+}
+
+form > a {
+  width: 150px;
+  height: 50px;
+  border: 2.5px solid #ffffff;
+  padding: 5px 15px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondgray-color);
+}
+
+.daftar {
+  display: flex;
+  gap: 20px;
+}
+
+.daftar-item {
+  cursor: pointer;
+  position: relative;
+}
+
+.daftar-item::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: var(--tetiary-color); 
+  position: absolute;
+  bottom: -5px;
+  transition: width 0.3s;
+}
+
+.daftar-item:hover::after,
+.daftar-item:target::after {
+  width: 100%;
+}
